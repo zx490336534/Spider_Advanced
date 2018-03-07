@@ -1,0 +1,49 @@
+一、selenium介绍
+一个自动化测试工具。
+在爬虫中能做什么？
+官网的说法：
+Selenium automates browsers. That's it! What you do with that power is entirely up to you.
+浏览器的自动化操作，你想干嘛就干嘛.....就这么简单！
+
+开源易用，支持多种语言
+支持大部分主流的浏览器：firefox，chrome，ie，edge，safari，opera，phantomjs等等
+
+官方文档：https://www.seleniumhq.org/docs
+
+二、selenium使用
+selenium包括了很多方面，如Selenium IDE 、Selenium Remote Control 、
+Selenium Grid 、Selenium WebDriver
+爬虫系统主要使用到Selenium WebDriver，可以在本地或远程计算机上驱动浏览器
+
+三、具体使用
+见代码
+
+四、注意事项
+1、需要手动关闭
+driver.quit()
+
+2、并发使用多进程
+
+3、html中有iframe
+需要切换到iframe中去：driver.switch_to.frame(driver.find_element_by_id``("topmenuFrame"))
+然后查找iframe下的元素
+切换回默认的frame中：driver.switch_to.frame(0)
+
+4、三种等待资源加载完成
+4.1、 time.sleep
+强制等待，不管资源的实际加载情况，等待指定时长，时间到后直接执行后续代码
+
+4.2、 driver.implicitly_wait(30)
+隐性等待，设置一个最长等待时间，如果资源提前加载，则会立即往下执行
+注意这个设置为全局设置，对整个driver的所有资源加载都有效，只需要在开始设置一次
+弊端：会等待所有资源加载完成
+
+4.3、 显性等待
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+driver.get('https://huilansame.github.io')
+locator = (By.LINK_TEXT, 'CSDN')
+WebDriverWait(driver, 20, 0.5).until(EC.presence_of_element_located(locator))
+
+五、phantomjs
+官方文档：http://phantomjs.org/api/webpage/
