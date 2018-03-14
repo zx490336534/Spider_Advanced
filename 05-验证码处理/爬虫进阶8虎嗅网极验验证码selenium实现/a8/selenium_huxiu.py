@@ -7,7 +7,7 @@ import random
 import time
 from selenium.webdriver import ActionChains
 
-from a8.img_handle import get_image, get_diff_location
+from img_handle import get_image, get_diff_location
 
 
 from selenium import webdriver
@@ -35,6 +35,7 @@ class GeettestHuXiu(object):
         self.driver.get(url)
 
         # 找到 注册按钮
+        self.driver.implicitly_wait(8)
         reg = self.driver.find_element_by_xpath('/html/body/header/div/ul[2]/li[4]/a')
         # 点击注册按钮
         reg.click()

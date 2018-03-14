@@ -1,0 +1,56 @@
+[INFO  - 2018-03-12T13:30:49.869Z] GhostDriver - Main - running on port 49760
+[INFO  - 2018-03-12T13:30:50.930Z] Session [94da50a0-25f9-11e8-b720-c1b3a0b5eec6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":false,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) Gecko/20121026 Firefox/16.0","webSecurityEnabled":true}
+[INFO  - 2018-03-12T13:30:50.930Z] Session [94da50a0-25f9-11e8-b720-c1b3a0b5eec6] - page.customHeaders:  - {}
+[INFO  - 2018-03-12T13:30:50.930Z] Session [94da50a0-25f9-11e8-b720-c1b3a0b5eec6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) Gecko/20121026 Firefox/16.0","phantomjs.page.settings.loadImages":false}
+[INFO  - 2018-03-12T13:30:50.931Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 94da50a0-25f9-11e8-b720-c1b3a0b5eec6
+[ERROR - 2018-03-12T13:30:50.942Z] RouterReqHand - _handle.error - {"name":"Missing Command Parameter","message":"{\"headers\":{\"Accept\":\"application/json\",\"Accept-Encoding\":\"identity\",\"Connection\":\"close\",\"Content-Length\":\"72\",\"Content-Type\":\"application/json;charset=UTF-8\",\"Host\":\"127.0.0.1:49760\",\"User-Agent\":\"Python http auth\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"pageLoad\\\": 10000, \\\"sessionId\\\": \\\"94da50a0-25f9-11e8-b720-c1b3a0b5eec6\\\"}\",\"url\":\"/timeouts\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"timeouts\",\"directory\":\"/\",\"path\":\"/timeouts\",\"relative\":\"/timeouts\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/timeouts\",\"queryKey\":{},\"chunks\":[\"timeouts\"]},\"urlOriginal\":\"/session/94da50a0-25f9-11e8-b720-c1b3a0b5eec6/timeouts\"}","line":546,"sourceURL":"phantomjs://code/session_request_handler.js","stack":"_postTimeout@phantomjs://code/session_request_handler.js:546:73\n_handle@phantomjs://code/session_request_handler.js:148:25\n_reroute@phantomjs://code/request_handler.js:61:20\n_handle@phantomjs://code/router_request_handler.js:78:46"}
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:52.968Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861452914
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:54.297Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861454275
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:55.623Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861455600
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:56.952Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861456917
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:58.283Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861458247
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:30:59.626Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861459603
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:00.938Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861460924
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:02.256Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861462225
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:03.597Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861463575
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:04.942Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861464906
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:06.262Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861466235
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:07.591Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861467559
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:08.948Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861468926
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:10.277Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861470246
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:11.594Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861471576
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-12T13:31:12.927Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1520861472891
+
+  phantomjs://platform/console++.js:263 in error

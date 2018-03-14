@@ -30,7 +30,10 @@ def print_url_params(url_params):
 
 if __name__ == '__main__':
     text='''
-    service	miniblog
+    userName	/WE6KrFtaIW4zXEA7AiS/w==
+mmsmms	aHIdPQtgrUD2FTZVxItYEw==
+key	8hTup7ChvnNQcIcB
+iv	G6LjzdTexWeg2cLG
     '''
     print_dict_from_copy_headers(text)
 
