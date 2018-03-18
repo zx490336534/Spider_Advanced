@@ -1,0 +1,67 @@
+
+
+https://passport.baidu.com/v2/api/?getapi&tpl=mn&apiver=v3&tt=1518266276301&class=login&gid=52342BA-C1AC-4062-BBD0-8C67681E0D24&loginversion=v4&logintype=dialogLogin&traceid=&callback=bd__cbs__jbznzo
+需要: gid(已完成)
+得到：token
+
+https://passport.baidu.com/static/passpc-base/dv/f.min.js
+215行
+function m(e) {
+            h && (x = e.token + "@" + Ue(e, e.token),
+            (1 & g.SendMethod) > 0 && l(x))
+        }
+得到: dv
+
+https://passport.baidu.com/v2/api/?logincheck&token=73a60c0f542032b6d0ad3a8df9a8f93b&tpl=mn&apiver=v3&tt=1518268258004&sub_source=leadsetpwd&username=mumuloveshine&loginversion=v4&dv=tk0.276407821845840561518268251909%40tto0zyAgPRnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34kDfn1WRngnTvkI~4kqRCot7E~5hFCwv6tADLgopL~w~PyC-FStcB8pfA1DZ4kngATpTA-pp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RAkI-n8pgngMe7k6RnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34k6pAF2RngnTvmpp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RA1qZnmpgngMeho0atAkPT4k2yn-pZ7koR4kozA9pfAk2RngPX4koznkoRCot7E~5hFCwv6tADLgopL~wSOywfBL5CFsw9KJZmMszRngnTvk6pA8pXn1qRn1Wz78X6D6Z06WtAL~wD6~hvnFhvLThVPTATOT5W4kngATp_yrrB~rIOwUvKhIoin8p-4kGf-ozMsRp412TA1DpAgI-nFIfAFIfnk6ynF6X7k2y7k2~nFWp7D__iobK0EfP0nb4-wTMTPUGStYB06UGywc4-X~OSE3BS3UBJD_Fopn12p4mfZn-pXnk6~4kng7mpXngGy4kPy7mpXngGy4kop7FDRAknXwo0vrnmpg78pyn-py7mpTn8pZ78pXnknRnFqZ4kogA8pXAk6RnFDz4ko~n8pX7kGRn1G-4k2znHp-7k6RngqX4kn-A8pgn1PRngnf4kngAp__&traceid=&callback=bd__cbs__je0dkb
+得到：codestring
+
+https://passport.baidu.com/v2/getpublickey?token=73a60c0f542032b6d0ad3a8df9a8f93b&tpl=mn&apiver=v3&tt=1518268258336&gid=2A2ED23-E7BA-4934-84B0-E7D5E1FACB2C&loginversion=v4&traceid=&callback=bd__cbs__kewsgo
+得到: pubkey  ， key(即rsakey)
+
+
+https://passport.baidu.com/v2/api/?login
+登录页面，
+需要关注的参数：
+token	73a60c0f542032b6d0ad3a8df9a8f93b
+codestring	jxG2906c1f811cbe23b02df15154301f07e27b09807cc047b78
+u	https://www.baidu.com/?tn=93882546_hao_pg
+gid	52342BA-C1AC-4062-BBD0-8C67681E0D24
+username	mumuloveshine
+password	KQueIucNzF0fy78bKHTPQxYb0yrvcQ341y3zq0I86foUW9e+jGaTwwlgd2MSmMlWCPqJwZbXoim7wqbFuySCjDtz2gFWdrcDiL9I1b2rUWLN5b7vUHBItKXDGcS7g/UKzrm/aJcQn13f8eRJfUVw4RjczfLnnegXb0ZpdSmcnkE=
+verifycode	女孩
+rsakey	3zjTwwRNUqNpMMxX50CSKCc60K1EeLcx
+ppui_logintime	20572 # 消耗的时间值，单位毫秒，random.randint(6000, 15000)
+fp_uid	7585223da396030da1877f18e336f06f
+fp_info	7585223da396030da1877f18e336f06f002~~~-z--XTorc-qimwX_q--buowm0m-95KO9GK_oowm0m-95KOmGK_V-lKrc-lKr~--rL-lyrOo0X-Lpzg9aWzCG8zmwJz9GLWC0nxLphwClmwC0tO9wtWm0oWSlFw90bjC0twm1lWSqLY9G8O90oOC0qxL-zgD~4TL-J_Gq-tJq-tSq-tCq-rxo0VlJpeYEp4NBpcoB-9QBHciEoDdL~QkEuh4B~4NBpcwc-qlDIDVB~cTPH9qB59qL-DdL5rTbIqNbH9UB-DXcoQmbIclPHZdE~qlDHeGB-WjDHWjsNk-DI6wPHeiCGoi9uFWsGoz9wtVBo0QADpc~bIcTEaWGB-QfEHWVb-4jPHeiLOFW908-9H8ODH4Nm09kDGKQmG8YbwJFb08OmGkkDG6GD1DNb-oz9H6GbGXW9Hnlm0q~9pbFmw8Qmwck9-4GbH8YSGohD~8QD~8WbGKW9-6km1oYC1KY90LOC1K-mGr~bG6Gb-DNm0mwD0DlbGlODp8Fm~4q9G4lmHbQ9G8-bGXzb0cx9pXwmHDqCpbjmwKjm~6qbH6N9Howb~JYm0o-b0tYmGmFbwmOD1LwD1twCp8Q9wcGm1tWC1lOCpXw9GJQb0J-CIWG90oWmwmFD0tQbw8jb~9N9pJF90lW9w9~b0oWDp8FC1rqbGX-DpXYbHmhD0oOmGK-mp8zmH4GmHb-m16kbGEkS~nqD~4QBanxb-efBIciPH9kEpqdB59x9G6qC0n~9GXwbwJO9wXwD1bWb0qlD09GbHmOD~bOb~XW90tjb-bFD~mOb-nq90DqmH9kD1rk90tYm06GC0EGbOWNCHDG91clD~8Wb0Xzm0bWDH9N9G4lbwoj91kqDGlFm1KODpcNmpX-C0bF9wXOmGqkbwqG9-XQ9GKO91XOmw6kHq-rRq-ryq-rwq-rZ--XMorR~Kf8jF_rowEHWUB~eOBK__-q-rI--tXq-tFq-tkq-taq-tPq-tWoVs0oi91Xh918FC1XwC1Lj9wXj98__
+dv	tk0.276407821845840561518268251909@tto0zyAgPRnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34kDfn1WRngnTvkI~4kqRCot7E~5hFCwv6tADLgopL~w~PyC-FStcB8pfA1DZ4kngATpTA-pp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RAkI-n8pgngMe7k6RnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34k6pAF2RngnTvmpp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RA1qZnmpgngMeho0GyAkPT4k2yn-pZ7koR4kozA9pfAk2RngPX4koznkoRCot7E~5hFCwv6tADLgopL~wSOywfBL5CFsw9KJZmMszRngnTvk6pA8pXn1qRn1Wz78X6D6Z06WtAL~wD6~hvnFhvLThVPTATOT5W4kngATp~AkGRn1qz4kWT7FPRCot7E~5hFCwv6tADLgopL~wyBL5YB93kOyE38J~94kngATpgAkGRnF2p4koXng6f4mpgngMeyrrB~rIOwUvKhIoin8p-4kGf-ozMsRp412TA1DpAgI-nFIfAFIfnk6ynF6X7k2y7k2~nFWp7D__iobK0EfP0nb4-wTMTPUGStYB06UGywc4-X~OSE3BS3UBJD_Fopn12p4mfZn-pXnk6~4kng7mpXngGy4kPy7mpXngGy4kop7FDRAknXwo0vrnmpg78pyn-py7mpTn8pZ78pXnknRnFqZ4kogA8pXAk6RnFDz4ko~n8pX7kGRn1G-4k2znHp-7k6RngqX4kn-A8pgn1PRngnf4kngAp__
+traceid	1B8DFC01
+
+注意事项：
+1、一定要清除缓存，确保抓包能抓到所有数据
+2、发现类似
+tk0.276407821845840561518268251909@tto0zyAgPRnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34kDfn1WRngnTvkI~4kqRCot7E~5hFCwv6tADLgopL~w~PyC-FStcB8pfA1DZ4kngATpTA-pp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RAkI-n8pgngMe7k6RnmX6D6Z06WtAL~wD6~hvnFhvLTCgBL57GJ~34k6pAF2RngnTvmpp4tEhFWM8D6~vL~hF6teXntwvMLA3PWZVOJ6RA1qZnmpgngMeho0GyAkPT4k2yn-pZ7koR4kozA9pfAk2RngPX4koznkoRCot7E~5hFCwv6tADLgopL~wSOywfBL5CFsw9KJZmMszRngnTvk6pA8pXn1qRn1Wz78X6D6Z06WtAL~wD6~hvnFhvLThVPTATOT5W4kngATp~AkGRn1qz4kWT7FPRCot7E~5hFCwv6tADLgopL~wyBL5YB93kOyE38J~94kngATpgAkGRnF2p4koXng6f4mpgngMeyrrB~rIOwUvKhIoin8p-4kGf-ozMsRp412TA1DpAgI-nFIfAFIfnk6ynF6X7k2y7k2~nFWp7D__iobK0EfP0nb4-wTMTPUGStYB06UGywc4-X~OSE3BS3UBJD_Fopn12p4mfZn-pXnk6~4kng7mpXngGy4kPy7mpXngGy4kop7FDRAknXwo0vrnmpg78pyn-py7mpTn8pZ78pXnknRnFqZ4kogA8pXAk6RnFDz4ko~n8pX7kGRn1G-4k2znHp-7k6RngqX4kn-A8pgn1PRngnf4kngAp__
+这样的有规律的分隔符分割的字符串，大概率都是同一个或多个加密算法，进行多次对不同的
+原始数据加密后，拼接得来的。
+3、在JS中，任何地方，譬如：判断语句中，  ||  &&   ?:  各种表达式中，
+    都是可以进行赋值的，
+    if a == b:  #  一般写法
+    if a == b = document.getElementByID('ele_name').value # 这样判断中进行赋值
+4、JS中：a = window.LG_DV_ARG && window.LG_DV_ARG.dvjsInput || ""
+    其实就是先判断 window.LG_DV_ARG 是否为空，不为空，
+        则 a = window.LG_DV_ARG.dvjsInput
+    如果 window.LG_DV_ARG 为空，&& window.LG_DV_ARG.dvjsInput 不起作用，
+        直接赋值为后面的 || 右边的值，即  a = ""
+
+    与下面的语句进行区分：
+        a = window.LG_DV_ARG.dvjsInput || "" # 这个写法，当window.LG_DV_ARG为"",null，undefined，会出错
+
+    而 a = window.LG_DV_ARG && window.LG_DV_ARG.dvjsInput || "" 这样则不会
+
+5、在js调试中，如果发现有些值，完全找不到，不知道如何生成的。
+    可以进行以下尝试：
+    1、提交空值，譬如 fp_uid:"" 这样提交，
+    2、提交抓包得到的固定值，譬如：fp_uid:"7585223da396030da1877f18e336f06f"
+
+6、类似百度登录中的fp_uid，可以确定是客户端通过JS生成，并且初次生成后，
+    是写入到cookie中，可以通过
+    document.cookie  查找

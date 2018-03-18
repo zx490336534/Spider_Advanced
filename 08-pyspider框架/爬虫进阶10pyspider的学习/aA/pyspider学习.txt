@@ -1,0 +1,58 @@
+一、pyspider介绍
+这个框架是一个国人编写的强大的网络爬虫系统并带有强大的WebUI。
+采用Python语言编写，分布式架构，支持多种数据库后端，
+强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。
+官方文档：http://docs.pyspider.org/en/latest/
+中文文档：http://www.pyspider.cn
+网络请求使用的是requests包，因此python环境中需要安装有requests
+
+默认使用 sqlite 来保存文件和代码，创建的sqlite的路径是你运行 pyspider的目录下，创建一个data文件夹
+ 譬如：C:\Users\51508>pyspider  ， sqlite的数据库文件路径为 C:\Users\51508\data
+二、测试运行
+首先得安装 pyspider ，通过pip就可以安装
+1、在命令行输入 pyspider all
+2、在浏览器中访问 http://localhost:5000
+3、整个页面分为两栏，左边是爬取页面预览区域，右边是代码编写区域。下面对区块进行说明：
+左侧绿色区域：
+这个请求对应的 JSON 变量，在 PySpider 中，其实每个请求都有与之对应的 JSON 变量，包括回调函数，方法名，请求链接，请求数据等等。
+绿色区域右上角Run：点击右上角的 run 按钮，就会执行这个请求，可以在左边的白色区域出现请求的结果。
+左侧 enable css selector helper: 抓取页面之后，点击此按钮，可以方便地获取页面中某个元素的 CSS 选择器。
+左侧 web: 即抓取的页面的实时预览图。
+左侧 html: 抓取页面的 HTML 代码。
+左侧 follows: 如果当前抓取方法中又新建了爬取请求，那么接下来的请求就会出现在 follows 里。
+左侧 messages: 爬取过程中输出的一些信息。
+
+右侧代码区域: 你可以在右侧区域书写代码，并点击右上角的 Save 按钮保存。
+右侧 WebDAV Mode: 打开调试模式，左侧最大化，便于观察调试。
+def on_start(self) 方法是入口代码。当在web控制台点击run按钮时会执行此方法。
+self.crawl(url, callback=self.index_page)这个方法是调用API生成一个新的爬取任务，这个任务被添加到待抓取队列。
+def index_page(self, response) 这个方法获取一个Response对象。 response.doc是pyquery对象的一个扩展方法。pyquery是一个类似于jQuery的对象选择器。
+def detail_page(self, response)返回一个结果集对象。这个结果默认会被添加到resultdb数据库（如果启动时没有指定数据库默认调用sqlite数据库）。你也可以重写on_result(self,result)方法来指定保存位置。
+
+@every(minutes=24*60, seconds=0) 这个设置是告诉scheduler（调度器）on_start方法每天执行一次。
+@config(age=10 * 24 * 60 * 60) age的单位是秒，这个设置告诉scheduler（调度器）这个request（请求）过期时间是10天，
+    10天内再遇到这个请求直接忽略。这个参数也可以在self.crawl(url, age=10*24*60*60) 和 crawl_config中设置。
+@config(priority=2) 这个是优先级设置。数字越大越先执行。
+
+三、实际代码测试
+
+
+四、框架分析
+py2和py3兼容
+1、database ： 针对数据库操作
+2、fetcher：与task交互，获取信息，应用了lua嵌入脚本，使用了协程
+3、libs：各种库，有多进程、测试、自定义Response等
+4、message_queue：消息队列
+5、processor：项目管理的核心处理
+6、result：处理返回结果，就是最后的 on_result
+7、scheduler：task队列调度
+8、webui：html界面操作，使用tornado
+9、run.py： 启动文件
+
+五、错误处理
+1、Exception: HTTP 599: SSL certificate problem: unable to get local issuer certificate
+在 crawl 方法中 添加 validate_cert=False 解决，这个类似requests的 s.verify = False
+
+2、 rate/burst
+rate ： 周期，单位秒，1秒执行几个task, 如 设置为 0.1 ，那么是 1秒执行0.1 个task ，设置为10，则是1秒10个task
+burst：同时多少个task 执行

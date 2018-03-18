@@ -1,0 +1,16 @@
+1、建立一个测试的python文件，并且编写一个类
+2、init 方法中，实例化 requests的session
+3、按照访问顺序，建立入口方法和依次访问的方法
+4、一般写1到2个方法，就测试一下
+5、visit_api  方法出现，未得到想要的 response
+6、requests进行代理设置，抓取程序访问的数据
+7、比对程序发送的 https://passport.baidu.com/v2/api/ 请求和 浏览器发送的数据 的差异
+    1、比对headers，写成一模一样
+    2、比对 params ，多次抓取 百度 的数据，
+        可以发现 callback = bd__cbs__cp7c9g 的value，每次都会变化，而且变化的结果是 bd__cbs__ 部分固定
+        查找 callback 的算法
+        大部分的网站的 callback，是可以不填写的，直接去掉这个参数不提交，而且得到的返回值，一般也会由
+        bd__cbs__759nr8({ "errInfo": {"no": "0" }})
+        变成：{ "errInfo": { "no": "0"   }}  这样的json字符串
+        但是百度不可以，必须提交callback
+
