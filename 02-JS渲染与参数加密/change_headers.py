@@ -30,38 +30,16 @@ def print_url_params(url_params):
 
 if __name__ == '__main__':
     text='''
-    	staticpage	https://www.baidu.com/cache/user/html/v3Jump.html
-charset	UTF-8
-token	a6e8d1f982edb13d2089267d40b05134
-tpl	mn
-subpro	
-apiver	v3
-tt	1521204077122
-codestring	
-safeflg	0
-u	https://www.baidu.com/
-isPhone	false
-detect	1
-gid	EEB1251-BFF1-4901-B6B4-F302BCEBBC7E
-quick_user	0
-logintype	dialogLogin
-logLoginType	pc_loginDialog
-idc	
-loginmerge	true
-splogin	rate
-username	490336534
-password	QwgZ4U2M6BRKnchQ3Ombs+Gyk2if7MC40ak7WB++HjArhmJvVWMrgzQf/wrh7gvdxSzykDhIFzOc82y6CGWBuqMRYHVZFy+uLXPtlwfWuEHW3eXh+oNEjgqdC+DOpTtrh0nX6slHUGH9hNpd7Cu57sv5qCi8Ls8xlKFaRv5CygY=
-mem_pass	on
-rsakey	K5jfYdYXuNx7sFY1wWRVsXsDusbkZ71x
-crypttype	12
-ppui_logintime	6188
-countrycode	
-fp_uid	7640c01633d892cd899a345681f9e0fb
-fp_info	7640c01633d892cd899a345681f9e0fb002~~~gxggpJnz2WyFvVp_kggGAnwvXlUv10jvm0znnwvXlUv10jvmBzvgl0sagl0srggsSglqqCn0VgbnzPo1xz4kBzvV9zokbx4XCwbnjV4lvV4XtNoVtxvXZxYlSVoXGM4XtVvmlxYybUokBNoXZN4XywbWzP6-3RbW9_IkgtykgtHkgtRkgsMn0vl9nhU5n3~In2ZIWodIr2F5Z6gb-df5qj3I-3~In2V2Wyl676eI-2RcroyIJoybW6gbJsRG7y~GroOIW6p2ZdvG72lcrEg5-yl6rhkIWxM6rxMu~fW678VcrhF4kZFoqSxukZzoVte-n0dA6n2-G72R51xkIWdD5rxeGW3McrhFbNx~vktMv-Ck4X8l4mBVvn9joVBSonCfvXBW6kyl6-BVvm9jvnZNGVtSvk8yGrBWvmlzvktUG-vd4XZNvn9UvV2-Y-GVvX0V6kZS6nGM6n9x6nBUG-BVvX0MGX6-4nBS6XZWvnZVoWGjGr9M6nZzokyf4mvU6mlzo-ok4m2l6Xo~4X5w6n2-G72R51xkIWdD5rxeGW3McrhFbNSM6rZSomfl6rvMok9zGX0Wv-ZzGklVvV8l4m3yvWvjoWoy6mZMoktd4r9MoV3lvnpj4n3fvXo-om2-oXvWorClYk9W6rZWGVof4m2y6XlzGrBMokbjoVZW6mGNGkfy4r9MomZxo-Cy6-6k6kbWvn9U6mbSGk6~oVCy4r8-4mlSvW9_Kkgs~kgstkgswkgsFggpEnzQ-0DBMS_znw5rxOI-hNI0__gkgsLggtVkgtOkgtjkgtZkgthkgtfnvuXZFompjomBS4mpV4mbMoVpMoB__
-loginversion	v4
-dv	tk0.08641891848382711521204071086@sun0ol9m~-8kMY8kIb8k6d8k6b8k3z8k2~7t~-7UEf9B6a8k2bCt~Y9UMf9U9d8knzCm~YCknf9U6S8knbCm~S9kJf9Snx8k9d9m~S7S6_sn0vC7k3f9m-JEJb0J3u7KdOEJdhG9BhGKzhQIz7zPz538kEb7UIf9SILGkJY8kqfr2uCod5hBrOGJu7EKS2~KdO~MK7SNaOY4m~d9kEb8k9zC0~d9m~~8uohB3NtEJdGKdhBJuw-9uOGIsuSIzNjIVEf7Bna9Y~S7SQw7B2f9m-JEJb0J3u7KdOEJdhG9BhGKzhQIz7zPz538kJS9B2f9SILGkJS8kqfr2uCod5hBrOGJu7EKS2~KdO~MK7SNaOY4m~d7kqz8k9zC0~_rn0or7BE-8kJYCm~b7BEf8k2L7W~x9BIf7kEd8k2zCk6f8k9d90~S7Uqf7BE~8kna7BMfIsuSIYd~DsOZPVZL8H-j4aZe8k9zC0~SCk6f9UJa8k9b9UEfr2uCod5hBrOGJu7EKS2~KdOdIarYBVug4t~S7SQw7kn-8k9z71~d7UEY8uohB3NtEJdGKdhBJuw-9uOGIzr1PHZx8k9zC0~_Cll4wlIWglcDhInh9t~Y8kMd-npNsf~8UqL7UE-Ck3-CkEL9S6Y7S2-7Bn-9Uqx9kI-9k6ahnpD0oxI09F8YOzNzIeMVuT40JeMaOg8Y-dPVoZ4VZe4HE_Fnv9Uqd8kM-71~L7Uqf7U6L8k2b9Uqf9BqL9m~-CBn~8k6z71~zCk2_
-traceid	DD618F01
-callback	parent.bd__pcbs__jfkibx'''
+    	Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: ll="118172"; bid=pNb-tilKHGo; gr_user_id=bcb86895-719b-4a8f-91de-e923bc31bf25; __yadk_uid=j7AukO9dfGxMyPj3B84egHnziLjk37Db; _vwo_uuid_v2=DFF85F209BFA09280545204792E54229|7c9fe8bd07c67511ab8950ba7362dcbf; UM_distinctid=1629ab30fe6317-0266efee2ef2ce-b34356b-1fa400-1629ab30fe74cc; __utmz=81379588.1523013852.3.3.utmcsr=douban.com|utmccn=(referral)|utmcmd=referral|utmcct=/; __utmc=30149280; __utma=81379588.840243717.1510755424.1523016391.1523066997.5; __utmc=81379588; _pk_ref.100001.3ac3=%5B%22%22%2C%22%22%2C1523066997%2C%22https%3A%2F%2Fwww.douban.com%2F%22%5D; _pk_ses.100001.3ac3=*; gr_cs1_b727a2e9-e6e8-4646-8ff9-feacc7ec8419=user_id%3A0; CNZZDATA1272964020=1133262041-1523013203-https%253A%252F%252Fwww.douban.com%252F%7C1523067061; viewed="25862578_26892808_1400705_27154065"; ps=y; __utma=30149280.1863945187.1510151677.1523066997.1523067730.10; __utmz=30149280.1523067730.10.9.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1; __utmt_douban=1; push_noty_num=0; push_doumail_num=0; dbcl2="78608593:7tzsR3/IJ38"; ck=LzfU; gr_session_id_22c937bbd8ebd703f2d8e9445f7dfd03=3dbd8d46-202c-4f79-b852-f2ee398bc84f; gr_cs1_3dbd8d46-202c-4f79-b852-f2ee398bc84f=user_id%3A1; __utmb=30149280.9.10.1523067730; __utmb=81379588.17.10.1523066997; _pk_id.100001.3ac3=e403aeab4497a81b.1510755425.5.1523067821.1523017536.; ap=1
+Host: book.douban.com
+Referer: https://www.douban.com/accounts/login?redir=https://book.douban.com/subject/25862578/&source=None&login_type=sms
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'''
     print_dict_from_copy_headers(text)
 
 
